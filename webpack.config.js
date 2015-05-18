@@ -1,5 +1,8 @@
 module.exports = {
-  entry: "./app/App.js",
+  //entry: "./app/App.js",
+  entry: {
+    app: ['webpack/hot/dev-server', './app/App.js']
+  },
   output: {
     filename: "public/bundle.js"
   },
